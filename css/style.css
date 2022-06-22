@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider-container .left-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100vh;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-container .left-slider > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.slider-container .right-slider {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    height: 100vh;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-container .right-slider > div {
+    height: 100%;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.slider-container .button-slider button {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    padding: 7px;
+    font-size: 35px;
+    border: none;
+}
+
+.slider-container .button-slider .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.slider-container .button-slider .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
